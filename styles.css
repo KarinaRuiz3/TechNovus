@@ -1,0 +1,112 @@
+/* Paleta de colores inspirada en el logo */
+:root {
+    --color-dark-blue: #092c4c; /* Azul oscuro principal (búho/KRAV) */
+    --color-cyan: #00bcd4;      /* Cian/Verde brillante (circuito) */
+    --color-light-gray: #f4f4f9;
+    --color-text: #333;
+}
+
+/* Estilos Globales y Tipografía */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-light-gray);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--color-dark-blue);
+    text-align: center;
+}
+
+/* Encabezado Principal (Hero Section) */
+.hero {
+    background-color: var(--color-dark-blue);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px; /* Tamaño del logo */
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+    color: white; /* Sobresale en el fondo oscuro */
+}
+
+.hero h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--color-cyan); /* Usa el cian para dar el toque tecnológico */
+}
+
+/* Secciones de Contenido */
+section {
+    padding: 40px 15%;
+    margin: 30px auto;
+    max-width: 1200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.services li {
+    background: var(--color-light-gray);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 5px solid var(--color-cyan); /* Detalle de color */
+    border-radius: 4px;
+}
+
+/* Botón de Llamada a la Acción (CTA) */
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-cyan);
+    color: var(--color-dark-blue);
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #00e5ff;
+}
+
+/* Pie de Página */
+footer {
+    background-color: var(--color-dark-blue);
+    color: var(--color-light-gray);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: var(--color-cyan);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
